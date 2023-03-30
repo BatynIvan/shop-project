@@ -57,6 +57,7 @@ body {
 
 .menu a {
   display: block;
+	height: 50px;
 	text-decoration: none;
 	color: #2c71b8;
 	text-align: center;
