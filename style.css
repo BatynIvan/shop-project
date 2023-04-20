@@ -99,6 +99,14 @@ body {
 	color: white;
 }
 
+.arrow_pos:hover .arrow {
+  background-image: url("images/sort_arrow.png");
+}
+
+.arrow_pos:hover a {
+  color: white;
+}
+
 .arrow_pos {
   display: flex;
   align-items: center;
@@ -114,14 +122,17 @@ body {
 
 .menu li:hover .drop_menu {
   display: flex;
+  color: white;
 }
 
 .drop_menu {
   display: none;
   flex-direction: column;
-  position: fixed;
-  top: 75px;
-  border-top: 26px solid transparent;
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  left: -1px;
+  z-index: 1;
 }
 
 .drop_menu li {
@@ -130,8 +141,8 @@ body {
 }
 
 .drop_menu a {
-  /* background-color: #2c71b8; */
   color: white;
+  background-color: #2c71b8;
   text-decoration: none;
   font-size: 21px;
   text-align: start;
@@ -140,7 +151,7 @@ body {
 
 .drop_menu a:hover {
   background-color: white;
-  color: #2c71b8
+  color: #2c71b8;
 }
 
 .search-form {
@@ -221,6 +232,8 @@ h1 {
 .product {
   border: 1px solid white;
   margin: 30px 0;
+  z-index: auto;
+  position: relative;
 }
 
 .product_image {
@@ -332,10 +345,74 @@ h1 {
 .bread {
   display: flex;
   margin: 10px 0;
-  color: rgba(97, 149, 202, 255);
+  color: rgba(97, 220, 202, 255);
   font-size: 14px;
 }
 
 .bread_text::after {
   content: ">";
+}
+
+.sort {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  height: 40px;
+  background-color: #2c71b8;
+  border: 1px solid white;
+  line-height: 40px;
+  padding-left: 20px;
+  color: white;
+  font-size: 21px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sort:hover {
+  background-color: white;
+  color: #2c71b8;
+}
+
+.sort:hover .sort_drop {
+  display: block;
+}
+
+.sort_drop {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 39px;
+  left: -1px;
+}
+
+.sort_item {
+  border: 1px solid white;
+  width: 270px;
+  background-color: #2c71b8;
+  padding-left: 20px;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.sort_item:hover {
+  color: #2c71b8;
+  background-color: white;
+}
+
+.sort_arrow {
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url("images/sort_arrow.png");
+}
+
+h3 {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
