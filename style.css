@@ -567,7 +567,11 @@ h3 {
 }
 
 .slick-dots li button {
-  border: 3px solid white;
+  border: 1px solid white;
+}
+
+.slick-prev, .slick-next {
+  top: 43%;
 }
 
 .slick-dots li button:before {
