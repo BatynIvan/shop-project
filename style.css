@@ -598,3 +598,13 @@ h3 {
 .slick-next:before {
   content: url("./images/icon_arrow_right_2.png");
 }
+
+.product-quantity {
+  text-align: center;
+  margin: 10px 0;
+}
+
+input {
+  width: 160px;
+  text-align: center;
+}
